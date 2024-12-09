@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imageGallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "static-pages.image-gallery",
+      "required": true
+    },
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "static-pages.hero-section",
+      "required": true
+    },
+    "featuredGridBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "static-pages.featured-grid-block",
+      "required": true
+    },
+    "contentSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "static-pages.content-section",
+      "required": true
+    }
+  }
+}

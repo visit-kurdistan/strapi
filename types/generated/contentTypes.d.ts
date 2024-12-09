@@ -369,6 +369,93 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiLocationLocation extends Struct.SingleTypeSchema {
+  collectionName: 'locations';
+  info: {
+    displayName: 'Location';
+    pluralName: 'locations';
+    singularName: 'location';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contentSection: Schema.Attribute.Component<
+      'static-pages.content-section',
+      false
+    > &
+      Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    featuredGridBlock: Schema.Attribute.Component<
+      'static-pages.featured-grid-block',
+      false
+    > &
+      Schema.Attribute.Required;
+    heroSection: Schema.Attribute.Component<
+      'static-pages.hero-section',
+      false
+    > &
+      Schema.Attribute.Required;
+    imageGallery: Schema.Attribute.Component<
+      'static-pages.image-gallery',
+      false
+    > &
+      Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::location.location'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPlacePlace extends Struct.SingleTypeSchema {
+  collectionName: 'places';
+  info: {
+    description: '';
+    displayName: 'Place';
+    pluralName: 'places';
+    singularName: 'place';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    featuredGridBlock: Schema.Attribute.Component<
+      'static-pages.featured-grid-block',
+      false
+    > &
+      Schema.Attribute.Required;
+    heroSection: Schema.Attribute.Component<
+      'static-pages.hero-section',
+      false
+    > &
+      Schema.Attribute.Required;
+    imageGallery: Schema.Attribute.Component<
+      'static-pages.image-gallery',
+      false
+    > &
+      Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::place.place'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiStaticPageStaticPage extends Struct.CollectionTypeSchema {
   collectionName: 'static_pages';
   info: {
@@ -915,6 +1002,8 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::location.location': ApiLocationLocation;
+      'api::place.place': ApiPlacePlace;
       'api::static-page.static-page': ApiStaticPageStaticPage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

@@ -369,9 +369,10 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiLocationLocation extends Struct.SingleTypeSchema {
+export interface ApiLocationLocation extends Struct.CollectionTypeSchema {
   collectionName: 'locations';
   info: {
+    description: '';
     displayName: 'Location';
     pluralName: 'locations';
     singularName: 'location';
@@ -416,7 +417,7 @@ export interface ApiLocationLocation extends Struct.SingleTypeSchema {
   };
 }
 
-export interface ApiPlacePlace extends Struct.SingleTypeSchema {
+export interface ApiPlacePlace extends Struct.CollectionTypeSchema {
   collectionName: 'places';
   info: {
     description: '';

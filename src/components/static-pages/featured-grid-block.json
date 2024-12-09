@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_static_pages_featured_grid_block",
+  "info": {
+    "displayName": "FeaturedGridBlock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

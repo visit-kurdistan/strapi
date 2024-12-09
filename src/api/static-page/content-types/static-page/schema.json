@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "static_pages",
+  "info": {
+    "singularName": "static-page",
+    "pluralName": "static-pages",
+    "displayName": "StaticPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "block": {
+      "type": "dynamiczone",
+      "components": [
+        "static-pages.hero-section",
+        "static-pages.image-gallery",
+        "static-pages.featured-grid-block",
+        "static-pages.content-section"
+      ],
+      "required": true
+    }
+  }
+}

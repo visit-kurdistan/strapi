@@ -42,9 +42,9 @@ export interface StaticPagesImageGallery extends Struct.ComponentSchema {
     displayName: 'ImageGallery';
   };
   attributes: {
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    description: Schema.Attribute.Text;
     images: Schema.Attribute.Media<'images', true> & Schema.Attribute.Required;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
   };
 }
 

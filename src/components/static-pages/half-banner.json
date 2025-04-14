@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_static_pages_half_banners",
+  "info": {
+    "displayName": "HalfBanner",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "banner_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "banner_title": {
+      "type": "string"
+    },
+    "banner_subtitle": {
+      "type": "string"
+    }
+  }
+}

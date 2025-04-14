@@ -1,20 +1,26 @@
 {
   "collectionName": "components_static_pages_image_title_texts",
   "info": {
-    "displayName": "ImageTitleText"
+    "displayName": "ImageTitleText",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Image": {
-      "allowedTypes": ["images"],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "content": {
-      "type": "text"
+      "type": "text",
+      "required": true
     }
   }
 }

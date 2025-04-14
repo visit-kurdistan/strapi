@@ -48,18 +48,6 @@ export interface StaticPagesImageGallery extends Struct.ComponentSchema {
   };
 }
 
-export interface StaticPagesImageTitleText extends Struct.ComponentSchema {
-  collectionName: 'components_static_pages_image_title_texts';
-  info: {
-    displayName: 'ImageTitleText';
-  };
-  attributes: {
-    content: Schema.Attribute.Text;
-    Image: Schema.Attribute.Media<'images'>;
-    title: Schema.Attribute.String;
-  };
-}
-
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -67,7 +55,6 @@ declare module '@strapi/strapi' {
       'static-pages.featured-grid-block': StaticPagesFeaturedGridBlock;
       'static-pages.hero-section': StaticPagesHeroSection;
       'static-pages.image-gallery': StaticPagesImageGallery;
-      'static-pages.image-title-text': StaticPagesImageTitleText;
     }
   }
 }

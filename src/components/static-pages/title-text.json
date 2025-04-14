@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_static_pages_title_texts",
+  "info": {
+    "displayName": "TitleText"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

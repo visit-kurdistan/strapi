@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_static_pages_quotes",
+  "info": {
+    "displayName": "Quote",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "quote_text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

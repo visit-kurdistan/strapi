@@ -475,6 +475,7 @@ export interface ApiStaticPageStaticPage extends Struct.CollectionTypeSchema {
         'static-pages.image-gallery',
         'static-pages.featured-grid-block',
         'static-pages.content-section',
+        'static-pages.image-title-text',
       ]
     > &
       Schema.Attribute.Required;

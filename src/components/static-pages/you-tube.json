@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_static_pages_you_tubes",
+  "info": {
+    "displayName": "YouTubeVideoWindow",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "video_url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

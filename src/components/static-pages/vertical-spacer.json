@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_static_pages_vertical_spacers",
+  "info": {
+    "displayName": "VerticalSpacer"
+  },
+  "options": {},
+  "attributes": {
+    "vertical_space": {
+      "type": "integer",
+      "required": true,
+      "default": 16
+    }
+  }
+}

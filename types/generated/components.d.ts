@@ -108,6 +108,18 @@ export interface StaticPagesTitleTextImage extends Struct.ComponentSchema {
   };
 }
 
+export interface StaticPagesVerticalSpacer extends Struct.ComponentSchema {
+  collectionName: 'components_static_pages_vertical_spacers';
+  info: {
+    displayName: 'VerticalSpacer';
+  };
+  attributes: {
+    vertical_space: Schema.Attribute.Integer &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<16>;
+  };
+}
+
 export interface StaticPagesYouTube extends Struct.ComponentSchema {
   collectionName: 'components_static_pages_you_tubes';
   info: {
@@ -131,6 +143,7 @@ declare module '@strapi/strapi' {
       'static-pages.quote': StaticPagesQuote;
       'static-pages.title-text': StaticPagesTitleText;
       'static-pages.title-text-image': StaticPagesTitleTextImage;
+      'static-pages.vertical-spacer': StaticPagesVerticalSpacer;
       'static-pages.you-tube': StaticPagesYouTube;
     }
   }

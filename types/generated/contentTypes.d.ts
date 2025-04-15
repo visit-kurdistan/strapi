@@ -481,6 +481,7 @@ export interface ApiStaticPageStaticPage extends Struct.CollectionTypeSchema {
         'static-pages.title-text-image',
         'static-pages.title-text',
         'static-pages.you-tube',
+        'static-pages.vertical-spacer',
       ]
     > &
       Schema.Attribute.Required;

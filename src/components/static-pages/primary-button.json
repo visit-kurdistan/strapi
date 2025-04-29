@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_static_pages_primary_buttons",
+  "info": {
+    "displayName": "primary-button"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "redirect_url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

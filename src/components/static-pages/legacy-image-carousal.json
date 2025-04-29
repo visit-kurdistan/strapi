@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_static_pages_legacy_image_carousals",
+  "info": {
+    "displayName": "LegacyImageCarousal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "right_arrow_button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "static-pages.right-arrow-button"
+    },
+    "legacy_cards": {
+      "displayName": "Legacy Cards",
+      "type": "component",
+      "repeatable": true,
+      "component": "static-pages.legacy-cards",
+      "required": true,
+      "min": 1
+    }
+  }
+}

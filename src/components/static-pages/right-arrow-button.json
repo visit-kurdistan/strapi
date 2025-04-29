@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_static_pages_right_arrow_buttons",
+  "info": {
+    "displayName": "right-arrow-button"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "redirect_url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

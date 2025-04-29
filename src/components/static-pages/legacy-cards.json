@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_static_pages_legacy_cards",
+  "info": {
+    "displayName": "Legacy Cards"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "legacy_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "legacy_url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

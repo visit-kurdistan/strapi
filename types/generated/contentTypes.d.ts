@@ -482,6 +482,10 @@ export interface ApiStaticPageStaticPage extends Struct.CollectionTypeSchema {
         'static-pages.title-text',
         'static-pages.you-tube',
         'static-pages.vertical-spacer',
+        'static-pages.main-partner-section',
+        'static-pages.legacy-image-carousal',
+        'static-pages.dynamic-banner',
+        'static-pages.activities-in-kurdistan',
       ]
     > &
       Schema.Attribute.Required;

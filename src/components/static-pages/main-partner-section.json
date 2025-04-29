@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_static_pages_main_partner_section_s",
+  "info": {
+    "displayName": "Main Partner Section ",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "main_title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "partner_card": {
+      "displayName": "Partner Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "static-pages.partner-card",
+      "min": 1,
+      "required": true
+    }
+  }
+}

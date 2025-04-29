@@ -32,6 +32,52 @@ npm run build
 yarn build
 ```
 
+---
+
+## 🚀 How to Push and Update Code on the Main Strapi Server
+
+Follow these steps to deploy updates to the main Strapi instance running on the VPS:
+
+### ✅ Steps
+
+1. **SSH into the VPS**
+
+```bash
+ssh <your-vps-user>@<your-vps-ip>
+```
+
+2. **Navigate to the Strapi project directory**
+
+```bash
+cd ~/vk-network/strapi
+```
+
+3. **Pull the latest changes from the `main` branch**
+
+```bash
+git pull origin main
+```
+
+4. **Install any new dependencies**
+
+```bash
+yarn install
+```
+
+5. **Check current status of Strapi process via PM2**
+
+```bash
+pm2 status
+```
+
+6. **Restart Strapi using PM2**
+
+```bash
+pm2 restart strapi
+```
+
+---
+
 ## ⚙️ Deployment
 
 Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
